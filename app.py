@@ -335,7 +335,7 @@ def build_chart(zone_df, player_name, subtitle):
         total_pct = total_fgm / total_fga * 100
         expected = (zone_df["fga"] * zone_df["lg_fg"]).sum() / total_fga
         refg = (total_fgm / total_fga - expected) * 100
-    else:
+    else:   
         total_pct = refg = 0.0
 
     ax.set_title(f"{player_name}\n{subtitle}", color="white",
